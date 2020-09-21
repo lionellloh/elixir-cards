@@ -1,16 +1,10 @@
 defmodule Cards do
   @moduledoc """
-  Documentation for `Cards`.
+  Documentation for `Cards` zzz.
   """
 
   @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> Cards.hello()
-      :world
-
+  lol
   """
   def create_deck do
     values = ["Ace", "Two", "Three", "Four", "Five"]
@@ -32,6 +26,11 @@ defmodule Cards do
     Enum.member?(deck, card)
   end
 
+  @doc """
+    Divides a deck into a hand and the remainder of the deck.
+    The `hand_size` arg indicates how many cards should be used.
+
+  """
   def deal(deck, hand_size) do
     Enum.split(deck, hand_size)
   end

@@ -1,6 +1,10 @@
 defmodule Cards.MixProject do
   use Mix.Project
 
+  @moduledoc """
+    Provides methods for creating and handling a deck of cards
+  """
+
   def project do
     [
       app: :cards,
